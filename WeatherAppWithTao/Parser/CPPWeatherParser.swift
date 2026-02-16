@@ -13,36 +13,40 @@ enum ParserError: Error {
 
 struct CPPWeatherParser {
     static func parseCurrent(from data: Data) throws -> Double {
-        guard
-            let dict = WeatherParser.parseCurrentWeather(data) as? [String: Any],
-            let temp = dict["temperature"] as? Double
-        else {
-            throw ParserError.invalidFormat
+        return data.withUnsafeBytes { raw in
+            parseCurrentWeather(
+                raw.bindMemory(to: CChar.self).baseAddress,
+                Int32(data.count)
+            )
         }
-
-        return temp
     }
 
-    static func parseForecast(from data: Data) throws -> [DayForecast] {
-        guard
-            let dicts = WeatherParser.parseForecast(data) as? [[String: Any]]
-        else {
-            throw ParserError.invalidFormat
+    static func parseWeekly(from data: Data) throws -> [DayForecast] {
+        var count: Int32 = 0
+
+        let ptr = data.withUnsafeBytes { raw in
+            parseForecast(
+                raw.bindMemory(to: CChar.self).baseAddress,
+                Int32(data.count),
+                &count
+            )
         }
 
-        return try dicts.map {
-            guard
-                let dt = $0["dt"] as? Int
-            else {
-                throw ParserError.invalidFormat
-            }
-            return .init(
-                date: Date(timeIntervalSince1970: Double(dt)),
-                temperature: $0["temp"] as? Double,
-                pressure: $0["pressure"] as? Int,
-                humidity: $0["humidity"] as? Int,
-                visibility: $0["visibility"] as? Int,
-                clouds: $0["clouds"] as? Int
+        defer { freeForecast(ptr) }
+
+        let buffer = UnsafeBufferPointer(
+            start: ptr,
+            count: Int(count)
+        )
+
+        return buffer.map { c in
+            DayForecast(
+                date: Date(timeIntervalSince1970: c.dt),
+                temperature: c.hasTemperature ? c.temperature : nil,
+                pressure: c.hasPressure ? Int(c.pressure) : nil,
+                humidity: c.hasHumidity ? Int(c.humidity) : nil,
+                visibility: c.hasVisibility ? Int(c.visibility) : nil,
+                clouds: c.hasClouds ? Int(c.clouds) : nil
             )
         }
     }

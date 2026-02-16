@@ -5,6 +5,8 @@
 //  Created by Alexey Kupriyanov on 15.02.2026.
 //
 
+import Foundation
+
 enum City: String, CaseIterable, Identifiable {
     case london
     case paris

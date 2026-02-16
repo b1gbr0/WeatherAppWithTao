@@ -5,6 +5,8 @@
 //  Created by Alexey Kupriyanov on 15.02.2026.
 //
 
+import Foundation
+
 protocol WeatherRepository {
     func weather(for city: City) async throws -> CityWeather
     func weeklyForecast(for: City) async throws -> WeeklyForecast
@@ -37,9 +39,7 @@ final class WeatherRepositoryImpl: WeatherRepository {
 
     func weeklyForecast(for city: City) async throws -> WeeklyForecast {
         let data = try await client.request(url: buildURL(for: city, with: "forecast"))
-
-        let days = try CPPWeatherParser.parseForecast(from: data)
-
+        let days = try CPPWeatherParser.parseWeekly(from: data)
         return WeeklyForecast(city: city, days: days)
     }
 }

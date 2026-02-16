@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		87EAB1C82F426F3100729F14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 87EAB1B22F426F2D00729F14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87EAB1B92F426F2D00729F14;
-			remoteInfo = WeatherAppWithTao;
-		};
-		87EAB1D22F426F3100729F14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 87EAB1B22F426F2D00729F14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87EAB1B92F426F2D00729F14;
-			remoteInfo = WeatherAppWithTao;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		87EAB1BA2F426F2D00729F14 /* WeatherAppWithTao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppWithTao.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		87EAB1C72F426F3100729F14 /* WeatherAppWithTaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppWithTaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87EAB1D12F426F3100729F14 /* WeatherAppWithTaoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppWithTaoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,16 +29,6 @@
 			path = WeatherAppWithTao;
 			sourceTree = "<group>";
 		};
-		87EAB1CA2F426F3100729F14 /* WeatherAppWithTaoTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherAppWithTaoTests;
-			sourceTree = "<group>";
-		};
-		87EAB1D42F426F3100729F14 /* WeatherAppWithTaoUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherAppWithTaoUITests;
-			sourceTree = "<group>";
-		};
 		87EAB4E62F42934700729F14 /* CPP */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CPP;
@@ -73,20 +44,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87EAB1C42F426F3100729F14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87EAB1CE2F426F3100729F14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,8 +52,6 @@
 			children = (
 				87EAB4E62F42934700729F14 /* CPP */,
 				87EAB1BC2F426F2D00729F14 /* WeatherAppWithTao */,
-				87EAB1CA2F426F3100729F14 /* WeatherAppWithTaoTests */,
-				87EAB1D42F426F3100729F14 /* WeatherAppWithTaoUITests */,
 				87EAB1BB2F426F2D00729F14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				87EAB1BA2F426F2D00729F14 /* WeatherAppWithTao.app */,
-				87EAB1C72F426F3100729F14 /* WeatherAppWithTaoTests.xctest */,
-				87EAB1D12F426F3100729F14 /* WeatherAppWithTaoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,52 +90,6 @@
 			productReference = 87EAB1BA2F426F2D00729F14 /* WeatherAppWithTao.app */;
 			productType = "com.apple.product-type.application";
 		};
-		87EAB1C62F426F3100729F14 /* WeatherAppWithTaoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87EAB1DE2F426F3100729F14 /* Build configuration list for PBXNativeTarget "WeatherAppWithTaoTests" */;
-			buildPhases = (
-				87EAB1C32F426F3100729F14 /* Sources */,
-				87EAB1C42F426F3100729F14 /* Frameworks */,
-				87EAB1C52F426F3100729F14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87EAB1C92F426F3100729F14 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				87EAB1CA2F426F3100729F14 /* WeatherAppWithTaoTests */,
-			);
-			name = WeatherAppWithTaoTests;
-			packageProductDependencies = (
-			);
-			productName = WeatherAppWithTaoTests;
-			productReference = 87EAB1C72F426F3100729F14 /* WeatherAppWithTaoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		87EAB1D02F426F3100729F14 /* WeatherAppWithTaoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87EAB1E12F426F3100729F14 /* Build configuration list for PBXNativeTarget "WeatherAppWithTaoUITests" */;
-			buildPhases = (
-				87EAB1CD2F426F3100729F14 /* Sources */,
-				87EAB1CE2F426F3100729F14 /* Frameworks */,
-				87EAB1CF2F426F3100729F14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87EAB1D32F426F3100729F14 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				87EAB1D42F426F3100729F14 /* WeatherAppWithTaoUITests */,
-			);
-			name = WeatherAppWithTaoUITests;
-			packageProductDependencies = (
-			);
-			productName = WeatherAppWithTaoUITests;
-			productReference = 87EAB1D12F426F3100729F14 /* WeatherAppWithTaoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,14 +103,6 @@
 					87EAB1B92F426F2D00729F14 = {
 						CreatedOnToolsVersion = 26.2;
 						LastSwiftMigration = 2620;
-					};
-					87EAB1C62F426F3100729F14 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 87EAB1B92F426F2D00729F14;
-					};
-					87EAB1D02F426F3100729F14 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 87EAB1B92F426F2D00729F14;
 					};
 				};
 			};
@@ -222,28 +121,12 @@
 			projectRoot = "";
 			targets = (
 				87EAB1B92F426F2D00729F14 /* WeatherAppWithTao */,
-				87EAB1C62F426F3100729F14 /* WeatherAppWithTaoTests */,
-				87EAB1D02F426F3100729F14 /* WeatherAppWithTaoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		87EAB1B82F426F2D00729F14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87EAB1C52F426F3100729F14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87EAB1CF2F426F3100729F14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,34 +143,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87EAB1C32F426F3100729F14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87EAB1CD2F426F3100729F14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		87EAB1C92F426F3100729F14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 87EAB1B92F426F2D00729F14 /* WeatherAppWithTao */;
-			targetProxy = 87EAB1C82F426F3100729F14 /* PBXContainerItemProxy */;
-		};
-		87EAB1D32F426F3100729F14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 87EAB1B92F426F2D00729F14 /* WeatherAppWithTao */;
-			targetProxy = 87EAB1D22F426F3100729F14 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		87EAB1D92F426F3100729F14 /* Debug */ = {
@@ -490,90 +346,6 @@
 			};
 			name = Release;
 		};
-		87EAB1DF2F426F3100729F14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U84VBYFBF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mr.akupr.WeatherAppWithTaoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAppWithTao.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherAppWithTao";
-			};
-			name = Debug;
-		};
-		87EAB1E02F426F3100729F14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U84VBYFBF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mr.akupr.WeatherAppWithTaoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAppWithTao.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherAppWithTao";
-			};
-			name = Release;
-		};
-		87EAB1E22F426F3100729F14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U84VBYFBF;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mr.akupr.WeatherAppWithTaoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WeatherAppWithTao;
-			};
-			name = Debug;
-		};
-		87EAB1E32F426F3100729F14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3U84VBYFBF;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mr.akupr.WeatherAppWithTaoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WeatherAppWithTao;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -591,24 +363,6 @@
 			buildConfigurations = (
 				87EAB1DC2F426F3100729F14 /* Debug */,
 				87EAB1DD2F426F3100729F14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87EAB1DE2F426F3100729F14 /* Build configuration list for PBXNativeTarget "WeatherAppWithTaoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87EAB1DF2F426F3100729F14 /* Debug */,
-				87EAB1E02F426F3100729F14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87EAB1E12F426F3100729F14 /* Build configuration list for PBXNativeTarget "WeatherAppWithTaoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87EAB1E22F426F3100729F14 /* Debug */,
-				87EAB1E32F426F3100729F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

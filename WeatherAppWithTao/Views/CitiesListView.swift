@@ -16,7 +16,6 @@ struct CitiesListView: View {
         NavigationStack {
             List {
                 ForEach(City.allCases) { city in
-//                    row(for: city)
                     NavigationLink {
                         CityDetailsView(
                             city: city,
