@@ -2,7 +2,7 @@
 //  WeatherAppWithTaoApp.swift
 //  WeatherAppWithTao
 //
-//  Created by Alexey Kupriyanov on 16.02.2026.
+//  Created by Alexey Kupriyanov on 15.02.2026.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct WeatherAppWithTaoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CitiesListView()
         }
     }
 }

@@ -29,9 +29,22 @@
 		87EAB1D12F426F3100729F14 /* WeatherAppWithTaoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppWithTaoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		87EAB5B92F42994A00729F14 /* Exceptions for "WeatherAppWithTao" folder in "WeatherAppWithTao" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 87EAB1B92F426F2D00729F14 /* WeatherAppWithTao */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		87EAB1BC2F426F2D00729F14 /* WeatherAppWithTao */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				87EAB5B92F42994A00729F14 /* Exceptions for "WeatherAppWithTao" folder in "WeatherAppWithTao" target */,
+			);
 			path = WeatherAppWithTao;
 			sourceTree = "<group>";
 		};
@@ -43,6 +56,11 @@
 		87EAB1D42F426F3100729F14 /* WeatherAppWithTaoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WeatherAppWithTaoUITests;
+			sourceTree = "<group>";
+		};
+		87EAB4E62F42934700729F14 /* CPP */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CPP;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +93,7 @@
 		87EAB1B12F426F2D00729F14 = {
 			isa = PBXGroup;
 			children = (
+				87EAB4E62F42934700729F14 /* CPP */,
 				87EAB1BC2F426F2D00729F14 /* WeatherAppWithTao */,
 				87EAB1CA2F426F3100729F14 /* WeatherAppWithTaoTests */,
 				87EAB1D42F426F3100729F14 /* WeatherAppWithTaoUITests */,
@@ -109,6 +128,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				87EAB1BC2F426F2D00729F14 /* WeatherAppWithTao */,
+				87EAB4E62F42934700729F14 /* CPP */,
 			);
 			name = WeatherAppWithTao;
 			packageProductDependencies = (
@@ -175,6 +195,7 @@
 				TargetAttributes = {
 					87EAB1B92F426F2D00729F14 = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 					87EAB1C62F426F3100729F14 = {
 						CreatedOnToolsVersion = 26.2;
@@ -392,14 +413,20 @@
 		};
 		87EAB1DC2F426F3100729F14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 87EAB1BC2F426F2D00729F14 /* WeatherAppWithTao */;
+			baseConfigurationReferenceRelativePath = Config/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3U84VBYFBF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CPP/include";
+				INFOPLIST_FILE = WeatherAppWithTao/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -416,6 +443,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WeatherAppWithTao/WeatherAppWithTao-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,14 +453,20 @@
 		};
 		87EAB1DD2F426F3100729F14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 87EAB1BC2F426F2D00729F14 /* WeatherAppWithTao */;
+			baseConfigurationReferenceRelativePath = Config/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3U84VBYFBF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CPP/include";
+				INFOPLIST_FILE = WeatherAppWithTao/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +483,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WeatherAppWithTao/WeatherAppWithTao-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
